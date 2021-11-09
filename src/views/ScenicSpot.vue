@@ -1,5 +1,5 @@
 <template>
-<div class="scenicSpot" style="width: 18rem;">
+<div class="scenicSpot container" style="width: 18rem;">
   <h5>scenicSpot</h5>
   <div class="card-body">
     <h5 class="card-title">{{ title }}</h5>

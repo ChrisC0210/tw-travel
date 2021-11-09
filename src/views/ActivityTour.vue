@@ -1,5 +1,5 @@
 <template>
-  <div class="activityTour">
+  <div class="activityTour container">
     ActivityTour
   </div>
 </template>

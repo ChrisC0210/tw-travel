@@ -1,7 +1,8 @@
 <template>
 <div class="CarouselHome mb-4">
-  <div class="container text-center">
-    <h4 class="text-center" style="color: #fff;z-index:9;position: absolute;left: 0;right: 0;top:250px;">熊愛旅行，解封出遊去</h4>
+  <div class="container text-center" style="z-index:9;position: absolute;left: 0;right: 0;top:250px;">
+    <h4 class="text-center" style="color: #fff;">熊愛旅行，解封出遊去</h4>
+    <button class="btn btn-primary">推薦景點</button>
     </div>
   <Carousel :items-to-show="1" :autoplay="5000" :wrap-around="true">
     <Slide v-for="slide in 1" :key="slide">

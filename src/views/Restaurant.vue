@@ -1,5 +1,5 @@
 <template>
-  <div class="/restaurant">
+  <div class="restaurant container">
     /restaurant
     <p class="pf pf-card">8888888</p>
   </div>

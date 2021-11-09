@@ -1,5 +1,5 @@
 <template>
-  <div class="/hotelTour">
+  <div class="hotelTour container">
   /hotelTour
   </div>
 </template>
