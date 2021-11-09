@@ -1,30 +1,60 @@
 <template>
-<div class="CarouselHome container">
-  <carousel :items-to-show="1.5">
-    <slide v-for="slide in 3" :key="slide">
-      {{ slide }}
-    </slide>
+<div class="CarouselHome mb-4">
+  <div class="container text-center">
+    <h4 class="text-center" style="color: #fff;z-index:9;position: absolute;left: 0;right: 0;top:250px;">熊愛旅行，解封出遊去</h4>
+    </div>
+  <Carousel :items-to-show="1" :autoplay="5000" :wrap-around="true">
+    <Slide v-for="slide in 1" :key="slide">
+      <!-- <div class="carousel__item">{{ slide }}</div> -->
+      <div class="carousel__item">
+        <img src="../assets/img/img-CarouselHome.png" alt="">
+      </div>
+    </Slide>
     <template #addons>
-      <navigation />
-      <pagination />
+      <!-- <Pagination /> -->
     </template>
-  </carousel>
+  </Carousel>
 </div>
 </template>
+
+<style>
+.carousel__item {
+  min-height: 450px;
+  width: 100%;
+  background-color: #EFEFEF;
+  /* background-color: var(--vc-clr-primary);
+  color:  var(--vc-clr-white); */
+  color:  #4A4A4A;
+  font-size: 20px;
+  /* border-radius: 8px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__slide {
+  margin: 0;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  border: 5px solid white;
+}
+</style>
 
 <script>
 // If you are using PurgeCSS, make sure to whitelist the carousel CSS classes
 import 'vue3-carousel/dist/carousel.css';
+import { defineComponent } from 'vue'
 // { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import { Carousel, Slide } from 'vue3-carousel';
 
-export default {
-  name: 'CarouselHome',
+export default defineComponent({
+  name: 'Autoplay',
   components: {
     Carousel,
-    Slide,
-    Pagination,
-    Navigation
+    Slide
   }
-};
+});
 </script>
