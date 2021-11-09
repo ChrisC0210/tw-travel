@@ -16,12 +16,36 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/viewer',
-    name: 'Viewer',
+    path: '/scenicSpot',
+    name: 'ScenicSpot',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Viewer.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/ScenicSpot.vue')
+  },
+  {
+    path: '/restaurant',
+    name: 'Restaurant',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Restaurant.vue')
+  },
+  {
+    path: '/hotelTour',
+    name: 'HotelTour',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/HotelTour.vue')
+  },
+  {
+    path: '/activityTour',
+    name: 'ActivityTour',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/ActivityTour.vue')
   }
 ]
 
