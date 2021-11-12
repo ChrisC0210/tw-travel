@@ -108,7 +108,7 @@
           <a href="#" class="d-flex flex-column text-white">
             <img src="../assets/img/img-live-1.png" alt="">
             <p class="text-center gray-800" style="font-size: 26px;">台南住宿</p>
-          </a>s
+          </a>
         </div>
       </div>
       <div class="col mb-2">
@@ -143,7 +143,47 @@
   <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
 </svg>
       最近活動</h4>
+      <div class="row">
+      <div class="col-md-10 order-md-2">
+        <h2 class="gray-800" style="font-size: 24px;">活動名稱</h2>
+        <div class="gray-800" style="font-size: 16px;">地點：縣市名稱</div>
+        <div class="gray-800" style="font-size: 16px;">發佈日期：2021-10-29</div>
+        <div class="gray-800" style="font-size: 16px;">活動簡述 Description (String, optional): Description (String, optional)</div>
+        <!-- <div class="gray-800" style="font-size: 24px;">景點名稱</div> -->
+      </div>
+      <div class="col-md-2 order-md-1">
+              <div class="col">
+        <div class="card-1 card card-cover overflow-hidden text-white rounded-5 " style="min-height: 150px;background-image: url('../assets/img/img-live-1.png');">
+          <a href="#" class="d-flex flex-column text-white">
+            <img src="../assets/img/img-live-2.png" alt="">
+          </a>
+        </div>
+      </div>
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 order-md-2">
+        <h2 class="gray-800" style="font-size: 24px;">活動名稱</h2>
+        <div class="gray-800" style="font-size: 16px;">地點：縣市名稱</div>
+        <div class="gray-800" style="font-size: 16px;">發佈日期：2021-10-29</div>
+        <div class="gray-800" style="font-size: 16px;">活動簡述 Description (String, optional): Description (String, optional)</div>
+        <!-- <div class="gray-800" style="font-size: 24px;">景點名稱</div> -->
+      </div>
+      <div class="col-md-2 order-md-1">
+              <div class="col">
+        <div class="card-1 card card-cover overflow-hidden text-white rounded-5 " style="min-height: 150px;background-image: url('../assets/img/img-live-1.png');">
+          <a href="#" class="d-flex flex-column text-white">
+            <img src="../assets/img/img-live-2.png" alt="">
+          </a>
+        </div>
+      </div>
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+      </div>
+    <hr class="">
+    </div>
     </div>
   </div>
 </template>
