@@ -44,7 +44,7 @@
     </div>
   </nav>
 </div> -->
-<header class="fixed-top">
+<header class="fixed-top" id="app">
   <div class="shadow-sm mb-2" style="background-color: #fff;">
       <nav class="navbar navbar-expand-md container">
     <div class="container-fluid">
@@ -70,11 +70,11 @@
           </li>
         </ul>
                 <span class="me-2">
-          <a href="#">
+          <button class="btn" v-on:click="toggle()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
       </svg>
-          </a>
+          </button>
         </span>
         <span class="me-2">
             <router-link to="../myList" class="me-4">
@@ -87,7 +87,7 @@
     </div>
   </nav>
   </div>
-  <div class="d-flex justify-content-center mb-4">
+  <div v-if="isShow" class="d-flex justify-content-center mb-4">
     <form class=" col-lg-6 col-sm-12 shadow-lg p-3 bg-body" style="border-radius: 50px;">
       <div class="d-flex grid" style="--bs-columns: 12;">
         <select class="g-col-2 " aria-label=".form-select-lg example" style="font-weight: 300;font-size:20px;border: 0px;">
@@ -121,3 +121,25 @@
 </header>
   </div>
 </template>
+
+<style scoped>
+.notShown {
+  visibility: hidden !important;
+}
+</style>
+
+<script>
+export default {
+  name: 'header',
+  data: function () {
+    return {
+      isShow: true
+    };
+  },
+  methods: {
+    toggle: function () {
+      this.isShow = !this.isShow
+    }
+  }
+};
+</script>
